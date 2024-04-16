@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 500px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.upper-section {
+    background-color: rgb(64, 2, 88);
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10%;
+    box-shadow: 0px 0px 25px rgb(186, 157, 193);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    height: 80px;
+    border-radius: 50px;
+    padding-right: 2px;
+}
+
+.zoom img {
+    transition: transform .2s;
+    /* Animation */
+
+}
+
+.zoom img:hover {
+    transform: scale(1.2);
+}
+
+.right-section a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+
+.background-image {
+    background-image: url('backgroundimg.jpeg');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.background-txt {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+.background-txt img {
+    height: 25vh;
+}
+
+#about {
+    padding: 20px 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+#last-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+@media only screen and (max-width:468px) {
+    .background-image{
+        max-width: 1000px;
+    }
+    .background-txt{
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    #about{
+        margin: 0;
+        max-width: 100%;
+        overflow: scroll;
+    }
+}
