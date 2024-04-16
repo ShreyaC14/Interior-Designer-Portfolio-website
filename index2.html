@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Section</title>
+    <link rel="stylesheet" href="index.html">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding:0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Roboto', Arial;
+            height: 1500px;
+        }
+
+        .logo1 {
+            height: 150px;
+            border-radius: 130px;
+
+        }
+
+        .header {
+            background-color: rgb(239, 195, 243);
+            color: rgb(2, 2, 77);
+            width: 100%;
+            height: 150px;
+            padding: 16px 10%;
+            box-shadow: 0px 0px 25px rgb(76, 4, 76);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+
+        .header p {
+            margin-right: 20%;
+            font-size: 40px;
+        }
+        .container{
+            max-width: 1224px;
+            width: 90%;
+            margin: auto;
+            padding: 180px 0;
+        }
+        .title{
+            margin-bottom: 2rem;
+        }
+
+        .image-grid {
+            display: flex;
+            gap: 20px;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        }
+
+        .picture img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        @media (max-width:768px) {
+
+            /*To make a page responsive*/
+            .image-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Design Section-->
+    <header class="header">
+        <a href="index.html">
+            <img class="logo1" src="logo.jpg" alt="PB">
+        </a>
+        <p>Transforming homes with love</p>
+    </header>
+    
+        <div class="container">
+            <h2 class="title"> Designs </h2>
+
+            <section class="image-grid">
+                <div class="column">
+                    <div class="picture">
+                        <img src="https://images.designtrends.com/wp-content/uploads/2015/12/30094405/Top-BedRoom-Design-For-Royal-Look.jpeg"
+                            alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="https://th.bing.com/th/id/OIP.Kbh9jzv8HOtPZswh10DGmwHaHa?pid=ImgDet&w=192&h=192&c=7"
+                            alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="https://th.bing.com/th/id/OIP.Sc-KYtVwhRqpRzd0A5CsvwHaJC?w=736&h=899&rs=1&pid=ImgDetMain"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="picture">
+                        <img style="height:20rem;width:25rem;"
+                            src="https://th.bing.com/th/id/OIP.4AkBj6DgAK-01KCRAqmnRQHaFj?pid=ImgDet&w=192&h=144&c=7s"
+                            alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="https://images.designtrends.com/wp-content/uploads/2015/12/30094405/Top-BedRoom-Design-For-Royal-Look.jpeg"
+                            alt="">
+                    </div>
+                    <div class="picture">
+                        <img src="https://th.bing.com/th/id/OIP.Kbh9jzv8HOtPZswh10DGmwHaHa?pid=ImgDet&w=192&h=192&c=7"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="picture">
+                        <img src="https://th.bing.com/th/id/OIP.Sc-KYtVwhRqpRzd0A5CsvwHaJC?w=736&h=899&rs=1&pid=ImgDetMain"
+                            alt="">
+                    </div>
+                    <div class="picture">
+                        <img style="height:20rem;width:25rem;"
+                            src="https://th.bing.com/th/id/OIP.4AkBj6DgAK-01KCRAqmnRQHaFj?pid=ImgDet&w=192&h=144&c=7s"
+                            alt="">
+                    </div>
+                    <div class="picture">
+                        <img style="height:20rem;width:25rem;"
+                            src="https://th.bing.com/th/id/OIP.4AkBj6DgAK-01KCRAqmnRQHaFj?pid=ImgDet&w=192&h=144&c=7s"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+
+</body>
+
+</html>
